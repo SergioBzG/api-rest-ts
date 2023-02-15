@@ -1,0 +1,63 @@
+# POST http://localhost:3333/api/registro-usuarios
+# Content-Type: application/json
+
+# {
+#     "codigo_usuario": 10013,
+#     "nombre_usuario": "Menelao",
+#     "contrasena": "Helena123",
+#     "email": "mene@unal.edu.co",
+#     "telefono": "32334446"
+# }
+
+# POST http://localhost:3333/api/registro-perfil
+# Content-Type: application/json 
+
+# {
+#     "codigo_perfil": 1003,
+#     "codigo_usuario": 10013,
+#     "nombre_perfil": "Cachón",
+#     "fecha_creacion": "1991-09-21"
+# }
+
+# POST http://localhost:3333/api/registro-publicacion
+# Content-Type: application/json
+
+# {
+#     "codigo_publicacion": 1923,
+#     "titulo": "La vida es un buñuelo",
+#     "cuerpo": "Hecho por los dioses",
+#     "codigo_usuario": 10011
+# }
+
+# GET http://localhost:3333/api/buscar-id/10011
+# Content-Type: application/json
+
+PUT http://localhost:3333/api/actualizar-usuario/10011
+Content-Type: application/json
+
+{
+  "nombre_usuario": "Perséfone",
+  "contrasena": "AdonisAct1",
+  "email": "perse@unal.edu.co",
+  "telefono": "34345466Act1"
+}
+
+# DELETE http://localhost:3333/api/eliminar-usuario/10011
+#Content-Type: application/json
+
+#Esta es otra forma de enviar parámetros por la url:
+# GET http://localhost:3333/api/filtrar-nombre?search=Ca
+# Content-Type: application/json
+
+#Rutas de listado
+# GET http://localhost:3333/api/listar-usuarios
+# Content-Type: application/json
+
+# GET http://localhost:3333/api/listar-perfil
+# Content-Type: application/json
+
+# GET http://localhost:3333/api/listar-publicaciones
+# Content-Type: application/json
+
+# GET http://localhost:3333/api/listar-usuario-grupo
+# Content-Type: application/json
